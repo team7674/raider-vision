@@ -1,6 +1,5 @@
 #========================================#
-SOURCES	:=	src \
-			source
+SOURCES	:=	src
 INCLUDE	:=	inc \
 			include
 
@@ -16,8 +15,7 @@ CFLAGS		=	$(LIBS)
 CXXFLAGS	=	$(LIBS)
 
 all:
-	$(CXX) ./$(SOURCES)/* $(CXXFLAGS)
-	$(CC) ./$(SOURCES)/* $(CFLAGS)
+	$(CXX) ./$(SOURCES)/main.cpp $(CXXFLAGS)
 
 deploy:
 	@make all
