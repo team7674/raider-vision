@@ -1,0 +1,4 @@
+all:
+
+deploy:
+	@make all
