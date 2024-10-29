@@ -12,9 +12,18 @@ LIBS	:=	-lm
 CXX	= $(TARGET)-g++
 CC	= $(TARGET)-gcc
 
-CFLAGS	=	$(LIBS)
+CFLAGS		=	$(LIBS)
+CXXFLAGS	=	$(LIBS)
 
 all:
+	$(CXX) ./$(SOURCES)/* $(CXXFLAGS)
+	$(CC) ./$(SOURCES)/* $(CFLAGS)
 
 deploy:
 	@make all
+
+debug:
+	
+
+holy_shit_everythings_breaking_help:
+	@make debug
